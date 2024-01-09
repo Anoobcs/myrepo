@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+header{
+    background: transparent;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 1.2em 0;
+    z-index: 100;
+}
+
+.header-wrapper{
+    display: flex;
+    
+    align-items: flex-start;
+    gap:.5em
+}
+.logo {
+ height: 30px;
+ 
+}
+
+
+ul li{
+    display: inline-block;
+}
+ul li+li{
+    margin-left: 1em;
+}
+.nav-link{
+    font-size: .9rem;
+    font-weight: 700;
+    color:beige;
+    
+    display: inline-block;
+    opacity: .8;
+}
+
+.nav-link:hover{
+    color:orange;
+    opacity: 1;
+}
+.nav-link:hover::before{
+    width:100%;
+}
+.section{
+    background-image: url("Kerala_Tourism.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    min-height:100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.name,.des,.place,.hero-btn-div{
+    z-index: 3;
+    position: relative;
+}
+.name{
+    font-size: 3rem;
+    color: red;
+}
+.place{
+    font-size: 1.5rem;
+    color:whitesmoke;
+}
+.des{
+    width:60%;
+    color:white;
+    line-height: 1.5;
+    margin-top: 1em;
+}
+.hero-btn-div{
+    margin-top: 2em;
+}
+.hero-btn{
+    padding: .5em 2em;
+}
+.hire-me-btn{
+    background-color: red;
+    color:white;
+}
+.contact-btn{
+    color:black;
+    background-color: bisque;
+    display: inline-block;
+    margin-left: 1em;
+}
